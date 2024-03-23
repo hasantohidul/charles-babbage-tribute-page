@@ -1,0 +1,146 @@
+/* Reset some default styles for better cross-browser consistency */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 1000px;
+  margin: auto;
+  background-color: #f4f4f4;
+  color: #333;
+  font-family: "Roboto Slab", serif;
+  line-height: 1.6;
+  padding: 0 20px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navigation bar */
+nav {
+  height: 100px;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* All the anchor elements in the page including the ones in the nav bar */
+a {
+  color: #04e;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover, a:focus {
+    text-decoration: underline;
+}
+
+a:focus {
+    background-color: #ccc;
+}
+nav > ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+nav > ul > li {
+  margin-right: 20px;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Banner image */
+figure {
+  margin-bottom: 20px;
+}
+
+.banner img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+figcaption {
+  text-align: center;
+}
+
+/* Tribute info (Time line of Babbage life) */
+#tribute-info,
+#books,
+#quotes,
+footer {
+  padding: 20px;
+}
+
+#tribute-info p {
+  margin-bottom: 20px;
+}
+
+#tribute-info li {
+  margin-top: 10px;
+}
+
+#tribute-info ul {
+  list-style-type: none;
+}
+
+#books p {
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+}
+
+/* Table element of books section */
+table th {
+  width: 16%;
+  background-color: #ccc;
+  padding: 1%;
+}
+
+table th:nth-of-type(2),
+td {
+  width: 76%;
+  padding: 1%;
+  background-color: #ddd;
+}
+
+@media (max-width: 768px) {
+  table th {
+    width: 15%;
+  }
+
+  table th:nth-of-type(2),
+  td {
+    width: 85%;
+  }
+}
+
+/* Qutoes section */
+#quotes {
+  margin-top: 20px;
+}
+
+blockquote {
+  border-left: 4px solid #ddd;
+  margin: 20px 0;
+  padding-left: 20px;
+  font-style: italic;
+}
+
+blockquote:last-of-type {
+  margin-bottom: 0;
+}
